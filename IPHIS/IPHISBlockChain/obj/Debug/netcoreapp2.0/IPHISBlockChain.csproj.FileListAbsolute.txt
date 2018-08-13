@@ -1,0 +1,8 @@
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\bin\Debug\netcoreapp2.0\IPHISBlockChain.deps.json
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\bin\Debug\netcoreapp2.0\IPHISBlockChain.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\bin\Debug\netcoreapp2.0\IPHISBlockChain.pdb
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\obj\Debug\netcoreapp2.0\IPHISBlockChain.csproj.CoreCompileInputs.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\obj\Debug\netcoreapp2.0\IPHISBlockChain.AssemblyInfoInputs.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\obj\Debug\netcoreapp2.0\IPHISBlockChain.AssemblyInfo.cs
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\obj\Debug\netcoreapp2.0\IPHISBlockChain.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISBlockChain\obj\Debug\netcoreapp2.0\IPHISBlockChain.pdb

@@ -1,0 +1,16 @@
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHIS.deps.json
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHIS.runtimeconfig.json
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHIS.runtimeconfig.dev.json
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHIS.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHIS.pdb
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.csprojAssemblyReference.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.csproj.CoreCompileInputs.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.AssemblyInfoInputs.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.AssemblyInfo.cs
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.pdb
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHISBiz.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHISDAL.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHISBiz.pdb
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\bin\Debug\netcoreapp2.0\IPHISDAL.pdb
+C:\Users\gbhushan\OneDrive\IPHIS\IPHIS\obj\Debug\netcoreapp2.0\IPHIS.csproj.CopyComplete

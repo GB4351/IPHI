@@ -1,0 +1,9 @@
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\bin\Debug\netcoreapp2.0\IPHISDAL.deps.json
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\bin\Debug\netcoreapp2.0\IPHISDAL.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\bin\Debug\netcoreapp2.0\IPHISDAL.pdb
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\obj\Debug\netcoreapp2.0\IPHISDAL.csprojAssemblyReference.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\obj\Debug\netcoreapp2.0\IPHISDAL.csproj.CoreCompileInputs.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\obj\Debug\netcoreapp2.0\IPHISDAL.AssemblyInfoInputs.cache
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\obj\Debug\netcoreapp2.0\IPHISDAL.AssemblyInfo.cs
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\obj\Debug\netcoreapp2.0\IPHISDAL.dll
+C:\Users\gbhushan\OneDrive\IPHIS\IPHISDAL\obj\Debug\netcoreapp2.0\IPHISDAL.pdb
