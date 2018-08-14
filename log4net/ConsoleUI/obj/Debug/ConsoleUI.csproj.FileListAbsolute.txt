@@ -1,0 +1,10 @@
+C:\Users\hp\source\repos\log4net\ConsoleUI\bin\Debug\ConsoleUI.exe.config
+C:\Users\hp\source\repos\log4net\ConsoleUI\bin\Debug\ConsoleUI.exe
+C:\Users\hp\source\repos\log4net\ConsoleUI\bin\Debug\ConsoleUI.pdb
+C:\Users\hp\source\repos\log4net\ConsoleUI\obj\Debug\ConsoleUI.csprojAssemblyReference.cache
+C:\Users\hp\source\repos\log4net\ConsoleUI\obj\Debug\ConsoleUI.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\log4net\ConsoleUI\obj\Debug\ConsoleUI.exe
+C:\Users\hp\source\repos\log4net\ConsoleUI\obj\Debug\ConsoleUI.pdb
+C:\Users\hp\source\repos\log4net\ConsoleUI\bin\Debug\log4net.dll
+C:\Users\hp\source\repos\log4net\ConsoleUI\bin\Debug\log4net.xml
+C:\Users\hp\source\repos\log4net\ConsoleUI\obj\Debug\ConsoleUI.csproj.CopyComplete
