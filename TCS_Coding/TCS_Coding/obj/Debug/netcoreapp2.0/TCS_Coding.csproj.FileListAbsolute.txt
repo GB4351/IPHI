@@ -1,0 +1,11 @@
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\bin\Debug\netcoreapp2.0\TCS_Coding.deps.json
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\bin\Debug\netcoreapp2.0\TCS_Coding.runtimeconfig.json
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\bin\Debug\netcoreapp2.0\TCS_Coding.runtimeconfig.dev.json
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\bin\Debug\netcoreapp2.0\TCS_Coding.dll
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\bin\Debug\netcoreapp2.0\TCS_Coding.pdb
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\obj\Debug\netcoreapp2.0\TCS_Coding.csprojResolveAssemblyReference.cache
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\obj\Debug\netcoreapp2.0\TCS_Coding.csproj.CoreCompileInputs.cache
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\obj\Debug\netcoreapp2.0\TCS_Coding.AssemblyInfoInputs.cache
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\obj\Debug\netcoreapp2.0\TCS_Coding.AssemblyInfo.cs
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\obj\Debug\netcoreapp2.0\TCS_Coding.dll
+C:\Users\ashima\source\repos\TCS_Coding\TCS_Coding\obj\Debug\netcoreapp2.0\TCS_Coding.pdb
