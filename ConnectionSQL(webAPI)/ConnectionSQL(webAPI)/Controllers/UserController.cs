@@ -9,6 +9,7 @@ using System.Data.SqlClient;
 using System.Configuration;
 using System.Net.Mail;
 using System.Net;
+using System.Data.Entity.Validation;
 
 namespace ConnectionSQL_webAPI_.Controllers
 {
@@ -49,48 +50,144 @@ namespace ConnectionSQL_webAPI_.Controllers
         [HttpGet]
         public ActionResult Registration(int id = 0)
         {
-            User usermodel = new User();
+            UserRecords usermodel = new UserRecords();
             usermodel.UserTypesCollection = new List<UserType>();
-            using (IPHISEntities dbModel = new IPHISEntities())
+            usermodel.CountriesCollection = new List<Country>();
+            usermodel.StatesCollection = new List<State>();
+            usermodel.CitiesCollection = new List<City>();
+            using (IPHISEntities dbmodel = new IPHISEntities())
             {
-                var v = dbModel.UserTypes.OrderBy(x => x.UserTypeId);
+                List<UserType> list = dbmodel.UserTypes.ToList();
+                ViewBag.UserTypeList = new SelectList(list, "UserTypeId", "TypeName");
+                var v = dbmodel.UserTypes.OrderBy(x => x.UserTypeId);
                 int a = v.Count();
                 foreach (UserType t in v)
                     usermodel.UserTypesCollection.Add(new UserType
-                     {
-                        UserTypeId=t.UserTypeId,
-                        TypeName=t.TypeName
-                     });
+                    {
+                        UserTypeId = t.UserTypeId,
+                        TypeName = t.TypeName
+                    });
+
+                List<Country> Clist = dbmodel.Countries.ToList();
+                ViewBag.CountryList = new SelectList(Clist, "CountryId", "CountryName", "CountryCode");
+                var c = dbmodel.Countries.OrderBy(x => x.CountryId);
+                int b = c.Count();
+                foreach (Country ct in c)
+                    usermodel.CountriesCollection.Add(new Country
+                    {
+                        CountryId = ct.CountryId,
+                        CountryName = ct.CountryName,
+                        CountryCode=ct.CountryCode
+                    });
+
+                List<State> Slist = dbmodel.States.ToList();
+                ViewBag.StateList = new SelectList(Slist, "StateId", "StateName");
+                var s = dbmodel.States.OrderBy(x => x.StateId);
+                int d = s.Count();
+                foreach (State st in s)
+                    usermodel.StatesCollection.Add(new State
+                    {
+                        StateId = st.StateId,
+                        StateName = st.StateName
+                        
+                    });
+
+                List<City> Cilist = dbmodel.Cities.ToList();
+                ViewBag.CityList = new SelectList(Cilist, "CityId", "CityName");
+                var ci = dbmodel.Cities.OrderBy(x => x.CityId);
+                int e = ci.Count();
+                foreach (City cty in ci)
+                    usermodel.CitiesCollection.Add(new City
+                    {
+                        CityId = cty.CityId,
+                        CityName = cty.CityName
+                    });
                 return View(usermodel);
             }
         }
 
         [HttpPost]
-        public ActionResult Registration(User usermodel)
+        public ActionResult Registration(UserRecords usermodel)
         {
-            User usermodel1 = new User();
+
             usermodel.AddressId = 1;
             usermodel.UserId = 12;
             usermodel.LoginErrorMessage = "No error";
             using (IPHISEntities dbmodel = new IPHISEntities())
             {
-                //dbmodel.Addresses.Add(usermodel);
-                dbmodel.Users.Add(usermodel);
-                usermodel1.UserTypesCollection = dbmodel.UserTypes.ToList<UserType>();
-                dbmodel.SaveChanges();
+                List<UserType> list = dbmodel.UserTypes.ToList();
+                ViewBag.UserTypeList = new SelectList(list, "UserTypeId", "TypeName");
+
+                List<Country> Clist = dbmodel.Countries.ToList();
+                ViewBag.CountryList = new SelectList(Clist, "CountryId", "CountryName");
+
+                List<State> Slist = dbmodel.States.ToList();
+                ViewBag.StateList = new SelectList(Slist, "StateId", "StateName");
+
+                List<City> Cilist = dbmodel.Cities.ToList();
+                ViewBag.CityList = new SelectList(Cilist, "CityId", "CityName");
+                ////dbmodel.Addresses.Add(usermodel);
+                //dbmodel.Users.Add(usermodel);
+                //usermodel1.UserTypesCollection = dbmodel.UserTypes.ToList<UserType>();
+                //dbmodel.SaveChanges();
+                ////var emp = dbmodel.User_Addr_Sec_Ans(usermodel.FirstName, usermodel.MiddleName, usermodel.LastName, usermodel.EmailAddress, usermodel.Password, usermodel.PhoneNumber, usermodel.UserUniqueId, usermodel.UserTypeId);
+
+                User usermodel1 = new User();
+                usermodel1.FirstName = usermodel.FirstName;
+                usermodel1.MiddleName = usermodel.MiddleName;
+                usermodel1.LastName = usermodel.LastName;
+                usermodel1.EmailAddress = usermodel.EmailAddress;
+                usermodel1.Password = usermodel.Password;
+                usermodel1.PhoneNumber = usermodel.PhoneNumber;
+                usermodel1.UserUniqueId = usermodel.UserUniqueId;
+                usermodel1.UserTypeId = usermodel.UserTypeId;
+                usermodel1.CountryId = usermodel.CountryId;
+                usermodel1.StateId = usermodel.StateId;
+                usermodel1.CityId = usermodel.CityId;
+
+                dbmodel.Users.Add(usermodel1);
+                try
+                {
+                    dbmodel.SaveChanges();
+                }
+                catch (DbEntityValidationException e)
+                {
+                    Console.WriteLine(e);
+                }
 
 
-                //var emp = dbmodel.User_Addr_Sec_Ans(usermodel.FirstName, usermodel.MiddleName, usermodel.LastName, usermodel.EmailAddress, usermodel.Password, usermodel.PhoneNumber, usermodel.UserUniqueId, usermodel.UserTypeId);
+                int LatestUserId = usermodel1.UserId;
+                Address addrmodel = new Address();
+                addrmodel.UserId = LatestUserId;
+                addrmodel.AddressLine1 = usermodel.AddressLine1;
+                addrmodel.AddressLine2 = usermodel.AddressLine2;
+                addrmodel.Pincode = usermodel.Pincode;
+
+                dbmodel.Addresses.Add(addrmodel);
+                try
+                {
+                    dbmodel.SaveChanges();
+                }
+                catch (DbEntityValidationException e)
+                {
+                    Console.WriteLine(e);
+                }
+
+                //Country countrymodel = new Country();
+                //countrymodel.UserId = LatestUserId;
+                //countrymodel.CountryId = usermodel.CountryId;
+
+
             }
 
             ModelState.Clear();
             ViewBag.SuccessMessage = "Registration Successfull.";
-            return View("Registration", new User_Addr_Sec_Ans_Result());
+            return View("Registration", new UserRecords());
 
-            
+
         }
 
-        
+
 
         //[HttpGet]
         //public ActionResult Question(int id=0)
@@ -107,7 +204,7 @@ namespace ConnectionSQL_webAPI_.Controllers
         //[HttpPost]
         //public ActionResult Question(Answer answermodel)
         //{
-            
+
         //    return View();
         //}
 
